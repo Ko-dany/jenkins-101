@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                echo "Poll SCM is working!"
                 cd myapp
                 pip install -r requirements.txt
                 '''
