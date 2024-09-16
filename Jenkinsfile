@@ -11,7 +11,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                echo "Hello Dany :D"
                 sh '''
                 cd myapp
                 pip install -r requirements.txt
@@ -24,7 +23,7 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Brad
+                python3 hello.py --name=Dany
                 '''
             }
         }
